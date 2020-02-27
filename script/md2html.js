@@ -32,7 +32,7 @@ function convertMd2Html() {
         .replace(/\{\{md\}\}/, mdHtml);
 
     fs.writeFileSync(path.resolve(buildDir, 'index.html'), html, 'utf-8');
-    console.log('convert md to html success!');
+    console.log('该第一次!');
 }
 
 module.exports = convertMd2Html;
