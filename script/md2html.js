@@ -23,6 +23,8 @@ function convertMd2Html() {
     }
     require.resolve('picnic');
 
+    console.log('第二次');
+    
     // const style = fs.readFileSync(path.resolve(__dirname, '../script/style.css'), 'utf-8');
     const style = fs.readFileSync(require.resolve('picnic'), 'utf-8');
     const tpl = fs.readFileSync(path.resolve(__dirname, '../script/tpl.html'), 'utf-8');
